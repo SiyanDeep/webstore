@@ -364,7 +364,7 @@ const getCourseAsHtmlString = course => {
 
   let callout = ``;
   let soldout = ``;
-  let register = `<button type="button" class="course-register" data-courseid="${course.id}">Register</button>`;
+  let register = `<button type="button" class="course-register" data-courseid="${course.id}">Add to Cart</button>`;
   if (course.available <= 0) {
     callout = `<small class="callout">Sold out</small>`;
     soldout = `soldout`;
