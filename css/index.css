@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { background-color: #ccc; font: 1em hevetica, arial, sans-serif; }
+h1 { font-size: 1em; }
+ul { list-style: none;  padding: 0; margin: 0; }
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  /* right: 0; */
+  left: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+  display: grid;
+  grid-template-columns:1fr 10fr 1fr 1fr;
+  justify-items: center;
+}
+.icons{
+  margin-top: 0.5em;
+}
+.logo{
+  height: 2em;
+  width: 2em;
+}
+.menu{
+  margin-top: 0.5em;
+}
+button{
+  padding: 0.5em;
+  background-color: aqua;
+  border-radius: 5px;
+}
+.search{
+  margin-top: 1.2em;
+  height: 1.3em;
+  font-size: 0.9em;;
+  width: 15vh;
+  border-radius: 15px;
+}
+.banner{
+  width: 100%;
+  height: 50vh;
+}
+.productImage{
+  width: 100%;
+}
+.buyButton{
+  padding: 1.2em 1.8em;
+  background-color: moccasin;
+  border-radius: 5px;
+}
+.buttonStyle{
+  text-align: center;
+}
+.displayGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  /* margin-top: 1em; */
+  background-color: #4CAF50;
+  /* margin-left: 5vh; */
+  /* margin-right: 5vh; */
+}
+.sizeSelection{
+  display: inline;
+  list-style-type: none;
+}
+.heading{
+  text-align: center;
+  /* background-color: #999; */
+  padding: 1.5em auto;
+  background-color: wheat;
+  color: white;
+}
+.swatches {
+  display: inline-block;
+  margin: 1em auto;
+}
+
+.swatches li {  
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-color { 
+  display: block;
+  position: relative;
+}
+
+.product-color span { 
+  display: block;
+  border: 2px solid transparent;
+  color: transparent;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+}
+
+.product-color input {
+  position: absolute;
+  opacity: 0;
+}
+
+.product-color input:checked + span {  
+  border: 2px solid #222; 
+}
+
+.product-color.red { background-color: tomato; }
+.product-color.blue { background-color: dodgerblue; }
+.product-color.white { background-color: white; }
+
+.displayGridView{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  margin: 1em auto;
+  ma
+  /* margin-left: 5vh; */
+  /* margin-right: 5vh; */
+}
+.rating{
+  display: inline;
+}
+.text{
+  margin-top: 1em;
+}
+.resultButton{
+  margin-left: 38%;
+  margin-right: 30%;
+}
+body {
+  background-color: #ddd;
+  color: #111;
+  font: 1em helvetica, arial, sans-serif;
+}
+
+.filters {
+  background-color: white;
+  padding: 1em;
+  border: 1px solid #999;
+  margin: 1em 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: wheat;
+  overflow: hidden;
+}
+
+.courses {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 1em;
+}
+.bottomBar{
+  background-color: wheat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer{
+  background-color: wheat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  padding: 1em;
+}
+.footerColor1{
+  background-color: teal;
+}
+.footerColor2{
+  background-color: tomato;
+  padding: 0.3em;
+}
+.footerColor3{
+  background-color: goldenrod;
+}
+.course {
+  background-color: #fff;
+  padding: 0 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0,0,0,0.4);
+  /* margin: 1em 0; */
+  position: relative;
+}
+.course.soldout {
+  box-shadow: none;
+  background-color: #eee;
+  color: #999;
+}
+
+.course-register {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+
+.cat-design {
+  border-left: 5px solid tomato;
+}
+.cat-development {
+  border-left: 5px solid teal;
+}
+
+.callout {
+  display: inline-block;
+  font-size: 0.5em;
+  vertical-align: top;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  background-color: grey;
+  color: white;
+  text-shadow: 0.125em 0.125em 0 rgba(0,0,0,0.4);
+  box-shadow: 0 0 1em rgba(0,0,0,0.4);
+}
+.callout.urgent {
+  background-color: crimson;
+}
+
+
+@media screen and (min-width: 40em) {
+  .grid-view {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-view .course-info {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .filters{
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+  footer{
+    grid-template-columns: 1fr;
+  }
+}
+/* Reference: - Responsive Menu- w3schools */
+/* Product sorting/filtering ---- used WDDM-Fall-14-Scheduler Example (RoccoPanacci) */
